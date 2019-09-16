@@ -1,7 +1,34 @@
+
+.active {
+  background-color: #3db0ff;
+}
+
+.navitems {
+  width:100%;
+}
+
+.navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display:flex;
+}
+
+.navarrows {
+  max-width:40px;
+  height:15px;
+}
+
 .mobilenav {
   height: 70px;
   background-color: #007fff;
   background-image: radial-gradient(circle farthest-corner at 50% 50%, #007fff, #00a1ff);
+}
+
+.navcube {
+  width: 20px;
+
 }
 
 .nav-link {
@@ -309,7 +336,7 @@
 
 .featured-btns {
   width: 80%;
-  height: 50px;
+  height: auto;
   border-radius: 5px;
   background-color: #3db0ff;
   background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent 70%, rgba(27, 61, 155, 0.14));
