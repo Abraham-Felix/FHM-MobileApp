@@ -8,7 +8,9 @@ const routes: Routes = [
   },
   { path: 'newspaper', loadChildren: './newspaper/newspaper.module#NewspaperPageModule' },
   { path: 'articles', loadChildren: './newspaper/articles/articles.module#ArticlesPageModule' },
-  { path: 'webnews', loadChildren: './newspaper/webnews/webnews.module#WebnewsPageModule' }
+  { path: 'webnews', loadChildren: './newspaper/webnews/webnews.module#WebnewsPageModule' },
+  { path: 'new-companies', loadChildren: './newspaper/new-companies/new-companies.module#NewCompaniesPageModule' },
+  { path: 'executive-news', loadChildren: './newspaper/executive-news/executive-news.module#ExecutiveNewsPageModule' }
 
 ];
 @NgModule({
