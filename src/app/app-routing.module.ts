@@ -10,7 +10,10 @@ const routes: Routes = [
   { path: 'articles', loadChildren: './newspaper/articles/articles.module#ArticlesPageModule' },
   { path: 'webnews', loadChildren: './newspaper/webnews/webnews.module#WebnewsPageModule' },
   { path: 'new-companies', loadChildren: './newspaper/new-companies/new-companies.module#NewCompaniesPageModule' },
-  { path: 'executive-news', loadChildren: './newspaper/executive-news/executive-news.module#ExecutiveNewsPageModule' }
+  { path: 'executive-news', loadChildren: './newspaper/executive-news/executive-news.module#ExecutiveNewsPageModule' },
+  { path: 'exec-spotlight', loadChildren: './newspaper/exec-spotlight/exec-spotlight.module#ExecSpotlightPageModule' },
+  { path: 'newsletter', loadChildren: './newspaper/newsletter/newsletter.module#NewsletterPageModule' },
+  { path: 'tweets', loadChildren: './newspaper/tweets/tweets.module#TweetsPageModule' }
 
 ];
 @NgModule({
