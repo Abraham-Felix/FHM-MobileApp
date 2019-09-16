@@ -1,4 +1,8 @@
 
+.aligncenter {
+  text-align: center;
+}
+
 .newsli {
   float: left;
 }
@@ -475,6 +479,7 @@
   box-shadow: 0 0 4px -1px #acabb6;
   -webkit-filter: blur(1px);
   filter: blur(1px);
+  max-width: 100%;
 }
 
 .featured-exe-pic {
@@ -687,6 +692,7 @@
   padding-left: 10px;
   font-weight: 200;
   text-align: justify;
+  overflow: auto;
 }
 
 .fhmico-newsletter {
