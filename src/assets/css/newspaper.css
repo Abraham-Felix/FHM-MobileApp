@@ -1,4 +1,20 @@
 
+.newsli {
+  float: left;
+}
+
+.newsli .npa {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.newsli .npa:hover:not(.active) {
+  background-color: lightgray;
+}
+
 .active {
   background-color: #3db0ff;
 }
