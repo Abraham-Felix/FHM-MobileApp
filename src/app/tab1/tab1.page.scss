@@ -25,7 +25,10 @@
   visibility: visible;
 }
 
-
+.padding-top {
+  padding-top: 10px;
+  padding-bottom:10px;
+}
 
 .homecube {
   max-width: 100px;
@@ -51,7 +54,7 @@
 }
 
 
-.column {
+.columniconmenu {
   border-radius: 10px;
   box-shadow: 1px 1px 7px 0 #3d3d3d;
   text-align: center;
@@ -77,6 +80,7 @@
 
 .iconbtn:hover {
   box-shadow: inset 0 1px 16px -7px #3d3d3d;
+  background: #3db0ff;
 }
 
 .text-block {
