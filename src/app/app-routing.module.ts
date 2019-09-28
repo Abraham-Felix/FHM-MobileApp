@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'executive-news', loadChildren: './newspaper/executive-news/executive-news.module#ExecutiveNewsPageModule' },
   { path: 'exec-spotlight', loadChildren: './newspaper/exec-spotlight/exec-spotlight.module#ExecSpotlightPageModule' },
   { path: 'newsletter', loadChildren: './newspaper/newsletter/newsletter.module#NewsletterPageModule' },
-  { path: 'tweets', loadChildren: './newspaper/tweets/tweets.module#TweetsPageModule' }
+  { path: 'tweets', loadChildren: './newspaper/tweets/tweets.module#TweetsPageModule' },
+  { path: 'companies', loadChildren: './companies/companies.module#CompaniesPageModule' }
 
 ];
 @NgModule({
