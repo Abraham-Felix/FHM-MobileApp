@@ -12,8 +12,6 @@
 
 </ion-header>
 
-
-
   <div class="section">
     <div class="w-row">
       <div class="columniconmenu w-col w-col-3 w-col-small-3 w-col-tiny-3 tooltip"> <span class="tooltiptext">Newspaper</span><a href="/newspaper" class="padding-top w-inline-block"><img src="assets/images/news.png" alt="" class="iconbtn"> </a></div>
@@ -29,3 +27,9 @@
 
     </ion-card-content>
   </ion-card>
+
+  <div class="box" *ngFor="let item of data; let i = index" >
+    <div>
+      <p> <span> Data : </span> <span innerHTML={{data[i]}}> </span> </p>
+      <p> <span> Author : </span> <span innerHTML={{author[i]}}> </span> </p>
+    </div>

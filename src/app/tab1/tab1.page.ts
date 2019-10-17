@@ -8,6 +8,8 @@ import { DataService } from "../data.service";
 })
 export class Tab1Page {
 
+  data : any[];
+  author : any [];
   constructor(private dataService: DataService) {}
 
 ngOnInit() {
@@ -15,6 +17,22 @@ ngOnInit() {
   this.dataService.getRemoteData().subscribe(data => {
     console.log("Remote Data:");
     console.log(data);
+    this.parseJson(data);
   });
  }
+
+parseJson(data)
+{
+   let jsonArray = data.data.children;
+
+  this.data = [];
+  this.author = [];
+
+  for(let i=0; i< jsonArray.length ; i++)
+  {
+     let jsonObject = jsonArray[i];
+     this.data.push(jsonObject.data);
+     this.author.push(jsonObject.author);
+  }
+}
 }
