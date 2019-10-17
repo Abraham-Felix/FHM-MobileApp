@@ -9,14 +9,14 @@ import { DataService } from "../data.service";
 export class Tab1Page {
 
   id : any[];
-  name : any [];
+  name : any[];
   constructor(private dataService: DataService) {}
 
 ngOnInit() {
 
   this.dataService.getRemoteData().subscribe(data => {
-    console.log("Remote Data:");
-    console.log(data);
+    console.log("Remote Data:" + JSON.stringify(data));
+    // console.log(data);
     this.parseJson(data);
   });
  }
