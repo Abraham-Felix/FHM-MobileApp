@@ -8,8 +8,8 @@ import { DataService } from "../data.service";
 })
 export class Tab1Page {
 
-  data : any[];
-  author : any [];
+  id : any[];
+  name : any [];
   constructor(private dataService: DataService) {}
 
 ngOnInit() {
@@ -23,16 +23,16 @@ ngOnInit() {
 
 parseJson(data)
 {
-   let jsonArray = data.data.children;
+   let jsonArray = data.record;
 
-  this.data = [];
-  this.author = [];
+  this.id = [];
+  this.name = [];
 
   for(let i=0; i< jsonArray.length ; i++)
   {
      let jsonObject = jsonArray[i];
-     this.data.push(jsonObject.data);
-     this.author.push(jsonObject.author);
+     this.id.push(jsonObject.id);
+     this.name.push(jsonObject.name);
   }
 }
 }

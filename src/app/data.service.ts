@@ -8,6 +8,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getRemoteData() {
-    return this.http.get("https://www.reddit.com/r/gifs/top/.json?limit=10&sort=hot");
+    return this.http.get("https://api.myjson.com/bins/s28ug");
   }
 }
