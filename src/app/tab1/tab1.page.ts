@@ -16,7 +16,7 @@ ngOnInit() {
 
   this.dataService.getRemoteData().subscribe(data => {
     console.log("Remote Data:" + JSON.stringify(data));
-    // console.log(data);
+   // console.log(data);
     this.parseJson(data);
   });
  }
