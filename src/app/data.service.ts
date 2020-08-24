@@ -8,6 +8,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getRemoteData() {
-    return this.http.get("https://api.myjson.com/bins/s28ug");
+    return this.http.get("https://fhmnewsletter.herokuapp.com/contacts.json");
   }
 }

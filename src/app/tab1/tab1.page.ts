@@ -23,7 +23,7 @@ ngOnInit() {
 
 parseJson(data)
 {
-   let jsonArray = data.record;
+   let jsonArray = data;
 
   this.id = [];
   this.name = [];
