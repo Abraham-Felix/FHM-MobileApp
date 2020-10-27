@@ -27,13 +27,11 @@
 
   <ion-card >
     <ion-card-content class="feedspotcard-1">
-<iframe class="widget_preview_iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" scrolling="no" style="visibility: visible; width: 100%; height: 423px;" src="https://www.feedspot.com/widgets/lookup/4IlBb5bcb8bf"></iframe>
-    </ion-card-content>
+      <div class="box" *ngFor="let item of posts; let i = index" >
+        <div>
+          <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p>
+          <p> <span> Name : </span> <span innerHTML={{title[i]}}> </span> </p>
+        </div>
+        </div>
+  </ion-card-content>
   </ion-card>
-
-  <div class="box" *ngFor="let item of name; let i = index" >
-    <div>
-      <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p>
-      <p> <span> Name : </span> <span innerHTML={{name[i]}}> </span> </p>
-    </div>
-    </div>
