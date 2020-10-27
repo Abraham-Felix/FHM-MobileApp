@@ -27,11 +27,16 @@
 
   <ion-card >
     <ion-card-content class="feedspotcard-1">
-      <div class="box" *ngFor="let item of posts; let i = index" >
+      <h3> Featuring Insurtech Articles </h3>
+      <div class="box" *ngFor=" let item of title; let i = index;" >
         <div>
-          <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p>
-          <p> <span> Name : </span> <span innerHTML={{title[i]}}> </span> </p>
+
+          <!-- <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p> -->
+          <p> <span> Title : </span> <span innerHTML={{title[i]}}> </span> </p>
+          <p> <span> author : </span> <span innerHTML={{author[i]}}> </span> </p>
+            <p> <span> blog entry : </span> <span innerHTML={{blog[i]}}> </span> </p>
+
         </div>
         </div>
-  </ion-card-content>
+    </ion-card-content>
   </ion-card>
