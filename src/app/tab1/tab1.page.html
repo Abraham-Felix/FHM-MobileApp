@@ -1,5 +1,7 @@
 <link href="assets/css/newspaper.css" rel="stylesheet">
 
+
+
 <ion-header>
 
   <ion-toolbar>
@@ -13,7 +15,6 @@
 </ion-header>
 
 
-
   <div class="section">
     <div class="w-row">
       <div class="columniconmenu w-col w-col-3 w-col-small-3 w-col-tiny-3 tooltip"> <span class="tooltiptext">Newspaper</span><a href="/newspaper" class="padding-top w-inline-block"><img src="assets/images/news.png" alt="" class="iconbtn"> </a></div>
@@ -22,21 +23,27 @@
       <div class="columniconmenu w-col w-col-3 w-col-small-3 w-col-tiny-3 tooltip"><span class="tooltiptext">Executives</span><a href="/executives" class="padding-top w-inline-block"><img src="assets/images/group.png" alt="" class="iconbtn"></a></div>
     </div>
   </div>
-
-
+<ion-content>
 
   <ion-card >
+    <ion-card-header>
+          <ion-card-subtitle>
+            <h3> Featuring Insurtech Articles </h3>
+          </ion-card-subtitle>
+        </ion-card-header>
     <ion-card-content class="feedspotcard-1">
-      <h3> Featuring Insurtech Articles </h3>
+
       <div class="box" *ngFor=" let item of title; let i = index;" >
-        <div>
+
+        <div class="box-shadow">
 
           <!-- <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p> -->
-          <p> <span> Title : </span> <span innerHTML={{title[i]}}> </span> </p>
+          <h4> <span innerHTML={{title[i]}}> </span> </h4>
           <p> <span> author : </span> <span innerHTML={{author[i]}}> </span> </p>
-            <p> <span> blog entry : </span> <span innerHTML={{blog[i]}}> </span> </p>
 
-        </div>
+          </div>
         </div>
     </ion-card-content>
   </ion-card>
+
+</ion-content>
