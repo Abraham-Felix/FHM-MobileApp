@@ -15,7 +15,7 @@ export class DataService {
   //  this.authToken = this.loadToken();
   //  headers.append('Authorization', this.authToken);
   //  headers.append('content-Type','application/json');
-     return this.http.get("https://fintechhorizonsmedia.com/api/v1/posts.json?grouping=Insurtech");
+     return this.http.get("https://fintechhorizonsmedia.com/api/v1/posts.json?grouping=");
   }
 }
 //get auth token
