@@ -18,7 +18,10 @@ export class ArticlespagePage implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.loading = true;
     this.dataService.getRemoteData().subscribe(data => {
+      // set the status of loading to false so the template can update
+      this.loading = false;
       console.log("Remote Data:" + JSON.stringify(data));
       //console.log(data);
       this.parseJson(data);
