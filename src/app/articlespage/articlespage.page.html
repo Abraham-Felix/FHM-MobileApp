@@ -48,9 +48,9 @@
        </ion-card-content>
      </ion-card>
 </div>
-      <ion-card  class="feedspotcard-1 box" *ngFor=" let item of title; let i = index;">
+      <ion-card  class="feedspotcard-1 box" *ngFor=" let item of title | paginate:{itemsPerPage: 5, currentPage:p}; let i = index;">
         <ion-card-content>
-            <div class="box-shadow">
+            <div class="box-shadow ">
               <div class="coolbar"></div>
               <!-- <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p> -->
               <h4> <span innerHTML={{title[i]}}> </span> </h4>
@@ -59,7 +59,13 @@
               <p> <span> date : </span> <span innerHTML={{date[i]}}> </span> </p>
             </div>
         </ion-card-content>
+
       </ion-card>
+
+      <pagination-controls (pageChange)="p=$event"></pagination-controls>
+
     </ion-content>
+
   </ion-app>
+
 </body>

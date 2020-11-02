@@ -14,6 +14,8 @@ export class ArticlespagePage implements OnInit {
     author : any[];
     date : any[];
     content : any[];
+    curPage : any[];
+    pageSize : 1;
 
   constructor(private dataService: DataService) { }
 
@@ -27,6 +29,10 @@ export class ArticlespagePage implements OnInit {
       this.parseJson(data);
     });
   }
+
+  numberOfPages() {
+  return Math.ceil(this.title.length / this.pageSize);
+};
 
   parseJson(data)
   {
