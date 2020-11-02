@@ -30,9 +30,9 @@
     <ion-content fullscreen>
      <h2 > Articles </h2>
      <div *ngIf="loading">
-       <!-- Crescent loading animation-->
+       <!-- Crescent -->
        <ion-card>
-       <ion-card-content>
+         <ion-card-content>
            <div class="box-shadow">
              <div class="coolbar"></div>
              <!-- <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p> -->
@@ -47,40 +47,8 @@
            </div>
        </ion-card-content>
      </ion-card>
-     <ion-card>
-     <ion-card-content>
-         <div class="box-shadow">
-           <div class="coolbar"></div>
-           <!-- <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p> -->
-           <h4> <ion-spinner name="crescent">
-           </ion-spinner> </h4>
-           <p> <ion-spinner name="crescent">
-           </ion-spinner> </p>
-           <p> <ion-spinner name="crescent">
-           </ion-spinner> </p>
-           <p><ion-spinner name="crescent">
-           </ion-spinner> </p>
-         </div>
-     </ion-card-content>
-   </ion-card>
-   <ion-card>
-   <ion-card-content>
-       <div class="box-shadow">
-         <div class="coolbar"></div>
-         <!-- <p> <span> Id : </span> <span innerHTML={{id[i]}}> </span> </p> -->
-         <h4> <ion-spinner name="crescent">
-         </ion-spinner> </h4>
-         <p> <ion-spinner name="crescent">
-         </ion-spinner> </p>
-         <p> <ion-spinner name="crescent">
-         </ion-spinner> </p>
-         <p><ion-spinner name="crescent">
-         </ion-spinner> </p>
-       </div>
-   </ion-card-content>
- </ion-card>
 </div>
-      <ion-card class="feedspotcard-1 box" *ngFor=" let item of title; let i = index;">
+      <ion-card  class="feedspotcard-1 box" *ngFor=" let item of title; let i = index;">
         <ion-card-content>
             <div class="box-shadow">
               <div class="coolbar"></div>

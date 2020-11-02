@@ -8,7 +8,7 @@ import { DataService } from "../data.service";
 })
 export class ArticlespagePage implements OnInit {
 
-
+    loading = true;
     //id : any[];
     title : any[];
     author : any[];
@@ -17,11 +17,11 @@ export class ArticlespagePage implements OnInit {
 
   constructor(private dataService: DataService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.loading = true;
     this.dataService.getRemoteData().subscribe(data => {
       // set the status of loading to false so the template can update
-      this.loading = false;
+    this.loading = false;
       console.log("Remote Data:" + JSON.stringify(data));
       //console.log(data);
       this.parseJson(data);
