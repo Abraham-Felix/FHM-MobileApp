@@ -250,7 +250,9 @@
 .webnews-link-col.newslettersnip {
   margin-top: 45px;
 }
-
+.active {
+    background-color: #9E9E9E !important;
+}
 .link-nav-txt {
   border-radius: 3px;
   color: rgba(0, 121, 204, 0.63);
@@ -1248,7 +1250,7 @@
     display: none;
   }
   .webnews-link-col {
-    color: #1b3d9b;
+    color: #c3c3c3;
   }
   .link-nav-txt {
     color: #1b3d9b;
