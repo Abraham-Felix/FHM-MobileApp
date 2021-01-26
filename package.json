@@ -2,7 +2,7 @@
   "name": "myApp",
   "version": "0.0.1",
   "engines": {
-    "node": "14.x"
+    "node": "10.16.3"
   },
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
