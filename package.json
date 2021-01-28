@@ -1,12 +1,12 @@
 {
-  "name": "Fintech-Mobile-App",
-  "version": "0.0.9",
+  "name": "fintech-mobile",
+  "version": "0.1.0",
+  "author": "Abraham-Felix",
+  "contact": "apesyntax@gmail.com",
   "engines": {
     "node": "10.x",
      "npm":  "6.x"
   },
-  "author": "Abraham Felix",
-  "contact": "apesyntax@gmail.com",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -17,6 +17,7 @@
   },
   "private": true,
   "dependencies": {
+    "express": "~4.4.3",
     "@angular/common": "~8.1.2",
     "@angular/compiler": "~8.1.2",
     "@angular/core": "~8.1.2",
